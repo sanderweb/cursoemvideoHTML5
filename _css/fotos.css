@@ -16,33 +16,120 @@ ul#album-fotos li{
     border: 5px solid #ffffff;
     background-color: #ffffff;
     box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+/*    AQUI È O TEMPO DO ZOOM IN*/
+    -webkit-transition: all .3S ease-in;
 }
 
+/*FORMATANDO UMA LEGENDA*/
 ul#album-fotos li span {
+/*    OPACIDADE 0 ESCONDE A FONTE*/
     opacity: 0;
+/*    COR DA FONTE*/
+    color: #ffffff;
+/*    COLOCAR UMA LEVE SOMBRA NA FONTE*/
+    text-shadow: 1px 1px 1px #000000;
+/*    FAZER UMA CAIXA PRETA TRANSPARENTE DE FUNDO*/
+    background-color: rgba(0,0,0,.3);
+/*    AUMENTAR O TAMNHO DA FONTE*/
+    font-size: 9pt;
+/*    AUMENTAR A AUTURA DE LINHA PARA FAZER QUE A FONTE DESÇA*/
+    line-height: 370px;
+/*    AUMENTANDO A LARGURA DO FUNDO*/
+    padding: 5px;    
 }
 
-/*CHAMAR IMAGEM POR CSS*/
-ul#album-fotos li#foto01{
-    background: url('../_imagens/galeria-01.jpg') no-repeat;
+/*AQUI FAZ O EFEITO ZOOM IN A FOTO SALTA NA TELA*/
+        ul#album-fotos li:hover {
+            -webkit-transform: scale(1.5);
+        }
+/*O TEMPO QUE A IMAGEM APARECE ESTA LA EM CIMA EM (ul#album-fotos li)(-webkit-transition: all 1S ease-in;)*/
+/*FIM DO EFEITO ZOOM IN*/
+
+/*AO PASSAR O MOUSE POR CIMA A LEGENDA APARECE*/
+ul#album-fotos li:hover span{
+    opacity: 1;
 }
+/*FIM DE FORMATAÇÂO DE LEGENDA*/
+
+        /*CHAMAR IMAGEM POR CSS*/
+        ul#album-fotos li#foto01{
+            background: url('../_imagens/galeria-01.jpg') no-repeat;
+        /*    FIM CHAMAR IMAGEM POR CSS*/
+
+/*    EFEITO ZOOM OUT*/
+    /*    O BACKGROUND POSITION MOSTRA O MEIO DA IMAGEM, 50% LATERAL 50% VERTICAL */    
+    background-position: 50% 50%;
+/*    O BACK GROUND SIZE TEM QUE SER O TAMANHO ORIGINAL DA IMAGEM! NESSE CASO PARA QUANDO DER O ZOOM OUT APARECER TODA A IMAGEM*/
+    background-size: 400px 400px;
+    
+    background-color: #ffffff;
+}
+
+/*AQUI È O EFEITO DE ZOOM OUT NA IMAGEM*/
+ul#album-fotos li#foto01:hover{
+/*    BACKGROUND POSITION VOLTAR A MOSTRAR O TOPO DA IMAGEM*/
+    background-position: 0px 0px;
+/*    VAI VOLTAR A MOSTAR O TAMANHO TOTAL DA IMAGEM*/
+    background-size: 200px 200px;
+}
+/*FIM DO EFEITO ZOOM DA IMAGEM,
+É MUITO LOUCO MAIS FUNCIONA!*/
 
 ul#album-fotos li#foto02{
     background: url('../_imagens/galeria-02.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
 }
 
+ul#album-fotos li#foto02:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
 ul#album-fotos li#foto03{
     background: url('../_imagens/galeria-03.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto03:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;    
 }
 
 ul#album-fotos li#foto04{
     background: url('../_imagens/galeria-04.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto04:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;    
 }
 
 ul#album-fotos li#foto05{
     background: url('../_imagens/galeria-05.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto05:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;    
 }
 
 ul#album-fotos li#foto06{
     background: url('../_imagens/galeria-06.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+    
+ul#album-fotos li#foto06:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;    
 }
