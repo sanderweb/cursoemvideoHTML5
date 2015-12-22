@@ -18,6 +18,7 @@ ul#album-fotos li{
     box-shadow: 1px 1px 3px rgba(0,0,0,.4);
 /*    AQUI È O TEMPO DO ZOOM IN*/
     -webkit-transition: all .3S ease-in;
+/*    FIM DO ZOOM IN*/
 }
 
 /*FORMATANDO UMA LEGENDA*/
