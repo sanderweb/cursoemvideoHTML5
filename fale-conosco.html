@@ -14,7 +14,7 @@ No Netbeans Para fazer commit "Equipe, remoto, expandir".
             <header id="cabecalho">
                 <hgroup>
                     <h1>Google Glass</h1>
-                    <h2>A revolução do Google está chegando parei na aula 33</h2>
+                    <h2>A revolução do Google está chegando parei na aula 34</h2>
                 </hgroup>
             <img id="icone" src="_imagens/contato.png"/>
             <nav id="menu">
@@ -53,7 +53,8 @@ No Netbeans Para fazer commit "Equipe, remoto, expandir".
             </nav>
             
             </header>
-        <form>
+        <!--"METHOD" POST=lento/mais seguro GET=rápido/menos seguro-->
+        <form method="post">
             <!--"FIELDSET" CRIA UMA CAIXA EM VOLTA DO TEXTO, UM CAMPO.-->
             <fieldset id="usuario">
                 <!--"LEGEND" CRIA UMA LEGENDA EMBUTIDA NO "FIELD"-->
@@ -107,23 +108,65 @@ No Netbeans Para fazer commit "Equipe, remoto, expandir".
                 </label>
                 </p><br/>
                 
-                Estado:<br/>
+                <p>
+                    <label for="cEst">
+                    Estado:
+                    </label>
+                    <!--"SELECT" CRIA UMA LISTA SUSPENÇA-->
+                    <select name="tEst" id="cEst">
+                        <!--"OPTGROUP" CRIA UM GRUPO EM NEGRITO DA LISTA NÂO SELECIONAVEL E EM NEGRITO-->
+                        <optgroup label="Região Sudeste">
+                            <!--"OPTION" OS ITEMS DA LISTA-->
+                            <!--"SELECTED" DA PREFERENCIA NA LISTA-->
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP" selected>São Paulo</option>
+                            <option value="MG">Minas Gerais</option>
+                        </optgroup>
+                        
+                        <optgroup label="Região Sul">  
+                            <option value="PR">Paraná</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                        </optgroup>
+                    </select>
+                </p><br/>
                 
-                Cidade:
+                <p>
+                    <label for="cCid">   
+                        Cidade:
+                    </label>
+                    <input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua Cidade" list="cidades"/>
+                    <!--"DATALIST" UMA LISTA DE SUGESTÔES E AUTOCOMPLETAR-->
+                    <datalist id="cidades">
+                        <option value="Rio de Janeiro"></option>
+                        <option value="Nova Iguaçu"></option>
+                        <option value="Niterói"></option>
+                        <option value="Belford Roxo"></option>
+                    </datalist>
+                </p>
             </fieldset>
             
             <fieldset id="mensagem">
-            <legend>Mensagem do Usuário</legend>
-                Grau de Urgência:
-                Mensagem:
+                <legend>Mensagem do Usuário</legend>
+                    <p>
+                        <label for="cUrg">Grau de Urgência:</label>
+                        <!--"INPU TYPE RANGE" CRIA UMA BARRA DE SELEÇÂO DE TAMANHO OU QUANTIDADE-->
+                        Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/>Máx 
+                    </p>
+                    
+                    <p>
+                        <label for="cMsg">Mensagem:</label>
+                        <!--"TEXTAREA" CRIA UMA CAIXA DE TEXTO GRANDE-->
+                        <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui a sua mensagem"></textarea>
+                    </p>
             </fieldset>
             
             <fieldset id="pedido">
             <legend>Quero um Google Glass</legend>
-                Gostaria de adquirir um Google Glass quando disponível
-                Cor:
-                Quantidade:
-                Preço Total: R$
+                <p><label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
+                <p><label for="cCor">Cor:</label></p>
+                <p><label for="cQtd">Quantidade:</label></p>
+                <p><label for="cTot">Preço Total: R$</label></p>
             </fieldset>
 
             [BOTÃO ENVIAR]
