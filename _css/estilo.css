@@ -35,7 +35,7 @@ a:hover {
 
 header#cabecalho img#icone {
     position: absolute;
-    left: 750px;
+    left: 1248px;
     top: 70px;
 } 
 
@@ -97,7 +97,7 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 300px; 
+    left: 740px; 
 }
 
 nav#menu li {
@@ -138,6 +138,25 @@ section#corpo {
     border-right: 1px solid #606060;
     padding-right: 15px;
 }
+/*FORMATAÇÂO DOS VIDEOS*/
+video#vutil {
+    display: block;
+    position: relative;
+    left: 3px;
+    top: -7px;
+    width: 496px;
+    
+}
+
+video#vnew {
+    display: block;
+    position: relative;
+    left: 1px;
+    top: 0px;
+    width: 347px;
+    
+}
+/*FIM VIDEOS*/
 
 article#noticia-principal h2 {
     font-size: 13pt;
